@@ -33,7 +33,7 @@ body{
     background-color: #A4F5F9;
     grid-column: 1/-1;
     grid-row: 2/3;
-    height: 25vh;
+    
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -52,22 +52,24 @@ body{
     border-top: 5px solid #006065
 }
 
+.header .texto1{  
+    margin-left: 30px;
+    padding: 10px 0;
+    color:#424949; 
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+} 
+
 .header .texto2{
 
     font-family: 'Inconsolata', monospace;
     color:#424949; 
     margin-left: 50px;
+    padding: 20px 0 30px 0;
     font-size: 40px;
 }
     
     
-.header .texto1{  
-    margin-left: 30px;
-    height: 50%;
-    color:#424949; 
-    font-family: 'Inconsolata', monospace;
-    font-size: 50px;
-} 
 
 
 
@@ -79,9 +81,8 @@ body{
 .contenedor .contenido{
     grid-column: 3/-1;
     grid-row: 3/4;
-    height: 67vh;
     box-shadow: 3px 3px 3px 3px  #CDCDCD;
-    border-radius: 10px
+    border-radius: 10px;
     
 }
 
@@ -91,7 +92,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left:10px;
+    padding: 40px 0;
     align-items: center;
 }
 
@@ -103,20 +104,21 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight:700;
     color:#006065; 
+    margin: 10px 0 30px 0;
     
 }
 
 .item1{
     
     width: 90%;
-    height: 85%;
+    height: 80%;
     border-left: 10px solid  #006065;
     font-family: 'Nunito', sans-serif;
     
 }
 .item1 p{
     font-size: 30px;
-    margin: 30px 0 0 60px;
+    margin: 10px 0 0 60px;
     color:#424949
 }
 
@@ -125,18 +127,20 @@ body{
 
 
 .contenedor .Espacio-SIDEBAR{
+    
     grid-column: 1/2;
     grid-row: 3/6;
     min-width: 20px;
     background-color: #A4F5F9;
     border-radius: 10px;
+
 }
 .contenedor .sidebar{
+    
     grid-column: 2/3;
     grid-row: 1/4;
     min-width: 130px;
     background-color: #006065;
-    height: 100vh;
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 83%, 0 100%, 0 0);
     border-radius: 5px;
 }
@@ -227,11 +231,11 @@ body{
     grid-column: 2/3;
     grid-row: 4/5;
     min-width: 130px;
+    height: 100%;
     background-color: #006065;
-    height: 100vh;
     clip-path: polygon(50% 0, 100% 17%, 100% 100%, 0 100%, 0 17%);
     border-radius: 5px;
-
+    padding: 0 0 100px 0 ;
 }
 
 .contactos {
@@ -430,11 +434,12 @@ a:link{
 
 .Experiencia{
     width: 100%;
-    height: 95vh;
+    height: 95%;
     margin-top:30px;
     box-shadow: 3px 3px 3px 3px  #CDCDCD;
     border-radius: 10px;
-    
+    /* padding: 30px 0 60px 0 ; */
+   
 }
 
 .Experiencia h1{
@@ -447,6 +452,7 @@ a:link{
     font-family: 'Raleway', sans-serif;
     font-weight:700;
     color:#006065;
+    margin: 0 0 20px 0;
     
 }
 
@@ -476,10 +482,11 @@ a:link{
 
 .conocimiento{
     width: 100%;
-    height: 95vh;
+    height: 95%;
     margin-top:30px;
     box-shadow: 3px 3px 3px 3px  #CDCDCD;
     border-radius: 10px;
+    /* padding: 30px 0 75px 0 ; */
 }
 
 .conocimiento h2{
@@ -492,6 +499,7 @@ a:link{
     font-family: 'Raleway', sans-serif;
     font-weight:700;
     color:#006065;
+    /* margin: 0 0 10px 0; */
     
 }
 
