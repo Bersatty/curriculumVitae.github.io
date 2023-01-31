@@ -8,26 +8,50 @@ document.querySelector("#lista-1").onclick= async() =>{
             icon: "success"
         })
     } catch (error) {
-        alert("error")
+        swal({
+            title: "Error al copiar!",
+            icon: "error"
+        })
     }
 }
 
 
             //  VENTANA DE E-MAIL
-const abrir = ()=>{
-    document.getElementById("windown").style.display="block"
- }
- const cerrar = ()=>{
-    document.getElementById("windown").style.display="none"
- }
+
+
+const btnabrirPopup = document.getElementById("lista-2");
+const ventanaEmail = document.getElementById("ventana-email");
+const popupEmail = document.getElementById("popup-email");
+const cerrarVentanaEmail = document.getElementById("cerrar-ventana-email");
+
+
+btnabrirPopup.addEventListener("click", function () {
+    ventanaEmail.classList.add("active")
+    popupEmail.classList.add("active")
+})
+
+cerrarVentanaEmail.addEventListener("click", ()=>{
+    ventanaEmail.classList.remove("active")
+    popupEmail.classList.remove("active")
+})
+
 
             //Ventana de Ubicacion
-const open = ()=>{
-    document.getElementById("vent").style.display="block"
- }
- const close = ()=>{
-    document.getElementById("vent").style.display="none"
- }
+
+const abrirVentanaMap = document.getElementById("lista-5");
+const ventanaMap = document.getElementById("ventana-map");
+const popupMap = document.getElementById("popup-map");
+const cerrarVentanaMap = document.getElementById("cerrar-ventana-map")
+
+abrirVentanaMap.addEventListener("click", ()=>{
+    ventanaMap.classList.add("active")
+    popupMap.classList.add("active")
+})
+
+cerrarVentanaMap.addEventListener("click", ()=>{
+    ventanaMap.classList.remove("active")
+    ventanaMap.classList.remove("active")
+})
 
 
             //Redireccion boton whatsapp
