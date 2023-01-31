@@ -307,7 +307,7 @@ a img{
     visibility: visible;
 }
 .popup-email{
-    background-color: #006065;
+    background-color: rgb(0, 96, 101);
     width: 40%;
     color:#eeeeec;
     font-size: 18px;
