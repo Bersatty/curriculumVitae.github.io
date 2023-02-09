@@ -367,15 +367,15 @@ a img{
     box-shadow: 0  0  10px 1px black;
 }
 
-.boton{
+.pure-button{
+    
     background-color:#d5d4d0;
-    width: 50%;
-    height: 30px;
     border-radius:10px;
-    border:none;
     box-shadow: 0 0 10px 5px black;
+    font-family: 'Raleway', sans-serif;
 
 }
+
 
 a:link{
     text-decoration:none;
