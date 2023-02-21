@@ -1144,7 +1144,11 @@ body{
 
 
 @media screen and (max-width: 582px){
-
+    
+    /* barras de contactos */
+    .listas-contactos-sidebar{
+    font-size:10px;
+ }
      /* Contenido */
 
    .item1 p{
