@@ -213,7 +213,7 @@ body{
 .contenedor .sidebar{
     grid-column: 2/3;
     grid-row: 1/4;
-    min-width: 130px;
+    min-width: 120px;
     background-color: #7a40ef;
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 83%, 0 100%, 0 0);
     border-radius: 5px;
@@ -289,7 +289,7 @@ body{
     grid-column: 2/3;
     grid-row: 4/6;
     height: 99%;
-    min-width: 130px;
+    min-width: 120px;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -614,12 +614,12 @@ body{
     grid-column: 3/4;
     grid-row: 4/6;
     font-size:15px;
+    min-width: 180px;
     margin: 0 3em 0 1em;
-
 }
 
 .Experiencia{
-
+    
     background-color: #212529 ;
     width: 100%;
     height: 96%;
@@ -627,7 +627,7 @@ body{
     border-radius: 10px;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    justify-content: space-around;
     padding: 0.5em 0;
     
 }
@@ -642,8 +642,8 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight:700;
     color:#e9e9e7;
-    margin: 0 0 0.30em 0;
-    
+    margin: 0 0 0.30em 0;  
+
 }
 
 .Lista-experiencia span{
@@ -655,7 +655,7 @@ body{
     font-weight: 600;
     color:#A4ABB3;
     border-bottom: 3px solid  #7a40ef;
-    
+
     
 }
 
@@ -670,8 +670,17 @@ body{
 
 
 
+
+
+/* /////////////////////CONTENIDO 2-2 /////////////////// */
+
 /* //////////////  CONTENIDO- CONOCIMIENTO  ///////////////// */
 
+.contenido2-3{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+}
 
 .contenido-2{
     
@@ -738,10 +747,11 @@ body{
     width:100%;
     border-radius:10px;
     padding:1em 0;
-
+    margin-top:3em;
 }
 
 .habilidades h2{
+    
     width: 100%;
     display: flex;
     justify-content: center;
@@ -823,98 +833,56 @@ body{
 
 
 }
-
-
-@media screen and (max-width: 1145px){
+@media screen and (max-width: 1040px){
        
-        /* Contenido */
+     /* Contenido */
 
    .contenido .Informacion-personal{
-        font-size:12px;
+    font-size:13px;
     }
-
         /* header */
     .contenedor .header{
-        font-size:12px;
+        font-size:13px;
     }
+
         /* Ventana-Email */
+
     .popup-email{
-        font-size: 12px;
+        font-size: 13px;
     }
     .Formulario{
-        font-size:12px;
+        font-size:13px;
     }
 
         /* Ventana-maps */
     .popup-map{
-            font-size:12px;
+            font-size:13px;
     }
 
 
         /* sidebar */
     .contenedor .sidebar{
-        font-size:12px;
+        font-size:13px;
     }
 
         /* sidebar-2 */
     .sidebar-2 {
-        font-size:12px;
+        font-size:13px;
     }
     
         /* contenido-1 */
     .contenido-1{
-        font-size:12px;
+        font-size:13px;
     }
     
         /* contenido-2 */
     .contenido-2{
-        font-size:12px;
+        font-size:13px;
     }
         
         /* contenido-3 */
     .contenido-3{
-        font-size:12px;
-    }
-
-
-}
-
-@media screen and (max-width:986px){
-           
-    /* Contenido */
-
-   .contenido .Informacion-personal{
-        font-size:11px;
-    }
-
-        /* header */
-    .contenedor .header{
-        font-size:11px;
-    }
-
-        /* sidebar */
-    .contenedor .sidebar{
-        font-size:11px;
-    }
-
-        /* sidebar-2 */
-    .sidebar-2 {
-        font-size:11px;
-    }
-    
-        /* contenido-1 */
-    .contenido-1{
-        font-size:11px;
-    }
-    
-        /* contenido-2 */
-    .contenido-2{
-        font-size:11px;
-    }
-        
-        /* contenido-3 */
-    .contenido-3{
-        font-size:11px;
+        font-size:13px;
     }
 
 
@@ -923,63 +891,81 @@ body{
 
 @media screen and (max-width: 907px){
 
-    /* Contenido */
-
-   .contenido .Informacion-personal{
-        font-size:9px;
-    }
-
-        /* header */
-    .contenedor .header{
-        font-size:9px;
+    /* header */
+   .contenedor .header{
+    font-size:12px;
     }
 
      /* Ventana-Email */
      .popup-email{
-        font-size: 10px;
+        font-size: 12px;
     }
     .Formulario{
-        font-size:10px;
+        font-size:12px;
     }
 
     /* Ventana-maps */
     .popup-map{
-        font-size:10px;
+        font-size:12px;
     }
     .Formulario{
-        font-size:10px;
+        font-size:12px;
     }
 
         /* sidebar */
     .contenedor .sidebar{
-        font-size:9px;
+        font-size:12px;
     }
     .imagen_movimiento{
         margin-top: 3.4em;
     }
-
-        /* sidebar-2 */
-    .sidebar-2 {
-        font-size:9px;
+ 
+     /* sidebar-2 */
+     .sidebar-2 {
+        font-size:12px;
     }
     
         /* contenido-1 */
     .contenido-1{
-        font-size:9px;
+        font-size:12px;
+    }
+   
+
+}
+
+@media screen and ( max-width:849px){
+   
+        
+     /* Contenido */
+
+    .item1 p{
+        font-size:1.6em;
     }
     
-        /* contenido-2 */
-    .contenido-2{
-        font-size:9px;
+
+    /* contenido-1 */
+    
+    .Lista-experiencia p{
+        font-size: 0.9em;
+ }
+    .Experiencia h1{
+        font-size: 1.8em;
+
+}
+       /* contenido-2 */
+       
+    .lista-conocimiento li{
+        font-size: 1.3em;
     }
         
         /* contenido-3 */
-    .contenido-3{
-        font-size:9px;
+    .lista-habilidades li{
+        font-size: 1.3em;
     }
 
 
 }
+
 
 @media screen and (max-width: 769px){
 
@@ -1014,15 +1000,15 @@ body{
     }
     
     
-    /* Contenido */
+        /* Contenido */
 
    .contenido .Informacion-personal{
-        font-size:7px;
+        font-size:11px;
     }
 
         /* header */
     .contenedor .header{
-            font-size:8px;
+            font-size:11px;
         }
     .header .texto{
             width: 70%;
@@ -1031,7 +1017,7 @@ body{
 
         /* sidebar */
     .contenedor .sidebar{
-        font-size:8px;
+        font-size:11px;
     }
     .imagen_movimiento{
         margin-top: 3.6em;
@@ -1039,128 +1025,181 @@ body{
 
         /* sidebar-2 */
     .sidebar-2 {
-        font-size:8px;
+        font-size:11px;
     }
     
         /* contenido-1 */
     .contenido-1{
-        font-size:8px;
+        font-size:11px;
+
     }
-    
+    .Experiencia h1{
+        font-size: 1.7em;
+        margin: 0 0 0.2em 0; 
+    }
+    .Lista-experiencia p{
+        font-size:0.8em;
+    }
+
         /* contenido-2 */
     .contenido-2{
-        font-size:8px;
+        font-size:11px;
     }
         
         /* contenido-3 */
     .contenido-3{
-        font-size:8px;
+        font-size:11px;
     }
 
 
 }
 
 
-@media screen and (max-width: 700px){
-
-        /* Contenido */
-
-    .item1 p{
-        font-size: 1.7em;
-    }
-
-        /* lista de contactos */
-    .listas-contactos-sidebar{
-        font-size:12px;
-    }
-
-        /* sidebar */
-
-    .contenedor .sidebar{
-        font-size:8px;
-    }
-    .imagen_movimiento{
-        margin-top: 4em;
-    }
-
-     /* Ventana-Email */
-     .popup-email{
-        font-size: 8px;
-    }
-    .Formulario{
-        font-size:8px;
-    }
-
-        /* Ventana-maps */
-    .popup-map{
-            font-size:8px;
-    }
-      
-        /* contenido-1 */
+@media screen and (max-width: 668px){
+     /* barras de contactos */
+     .listas-contactos-sidebar{
+        font-size:13px;
+     }
+    
+    /* contenido-1 */
     .contenido-1{
-        font-size:8px;
+        font-size:10px;
+        margin: 0 2em 0 1em;
     }
-    .Lista-experiencia p{
-        padding: 1.1em 1em;
-        font-size: 0.98em;
+    .Experiencia h1{
+        padding: 0.3em 0;
+    }
+    /* contenido-3 */
+     .lista-habilidades li{
+        font-size: 1.1em;
     }
     
-      
-
 }
 
+@media screen and (max-width: 614px){
 
-@media screen and (max-width: 590px){
-
-    /* Contenido */
+     /* Contenido */
 
    .contenido .Informacion-personal{
-        font-size:6px;
+        font-size:10px;
     }
-    /* lista de contactos */
-
-    .listas-contactos-sidebar{
-        font-size:10.5px;
-    } 
-
         /* header */
-   
-    .header .texto{
-        width: 65%;
+    .contenedor .header{
+        font-size:10px;
     }
 
-     /* Ventana-Email */
-     .popup-email{
-        font-size: 6px;
+        /* Ventana-Email */
+
+    .popup-email{
+        font-size: 10px;
     }
     .Formulario{
-        font-size:6px;
+        font-size:10px;
     }
 
         /* Ventana-maps */
     .popup-map{
-            font-size:6px;
+            font-size:10px;
+    }
+
+
+        /* sidebar */
+    .contenedor .sidebar{
+        font-size:10px;
     }
 
         /* sidebar-2 */
     .sidebar-2 {
-        font-size:6px;
+        font-size:10px;
     }
     
         /* contenido-1 */
     .contenido-1{
-        font-size:6px;
+        font-size:10px;
+        margin: 0 1em 0 1em;
+    }
+    .Experiencia h1{
+        font-size: 1.6em;
+    }
+    .Lista-experiencia span{
+        font-size: 1.1em;
+    }
+    .Lista-experiencia p{
+        font-size:0.8em;
     }
     
         /* contenido-2 */
     .contenido-2{
-        font-size:6px;
+        font-size:10px;
     }
         
         /* contenido-3 */
     .contenido-3{
-        font-size:6px;
+        font-size:10px;
     }
 
 
+}
+
+
+
+@media screen and (max-width: 582px){
+
+     /* Contenido */
+
+   .item1 p{
+        font-size:1.5em;
+    }
+     
+       /* sidebar-2 */
+       .sidebar-2 {
+        font-size:9px;
+    }
+    
+        /* contenido-1 */
+    .contenido-1{
+        font-size:10px;
+    }
+    .Experiencia h1{
+        font-size: 1.6em;
+    }
+    .Lista-experiencia span{
+        font-size: 1.1em;
+    }
+    .Lista-experiencia p{
+        font-size:0.8em;
+    }
+    
+        /* contenido-2 */
+    .contenido-2{
+        font-size:9px;
+    }
+        
+        /* contenido-3 */
+    .contenido-3{
+        font-size:9px;
+    }
+    .Lista-experiencia li{
+        font-size:1em;
+        padding: 1.3em 0;
+    }
+
+
+}
+@media screen and (max-width: 546px){
+
+  /* contenido-2 */
+  .contenido-2{
+    font-size:8px;
+}
+    
+    /* contenido-3 */
+.contenido-3{
+    font-size:8px;
+
+}
+.lista-habilidades li{
+    font-size:0.95em;
+    padding: 1.5em 0;
+}
 }
