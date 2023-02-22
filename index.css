@@ -288,7 +288,7 @@ body{
 .sidebar-2 {
     grid-column: 2/3;
     grid-row: 4/6;
-    height: 99%;
+    height: 98%;
     min-width: 120px;
     display: flex;
     flex-direction:column;
@@ -308,7 +308,6 @@ body{
     color:#A4ABB3;
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
-    /* font-size: 15px; */
     margin-top:6em ;
 }
 
@@ -392,7 +391,7 @@ body{
     width: 40%;
     color:#eeeeec;
     font-size: 15px;
-    min-width: 20em;
+    min-width: 24em;
     border-radius:5px;
     padding: 1.3em;
     border: 1px solid rgba(254, 254, 254,.7);
@@ -558,7 +557,7 @@ body{
     width: 40%;
     color:#eeeeec;
     font-size: 15px;
-    min-width: 20em;
+    min-width: 24em;
     min-height: 15em;
     border-radius:5px;
     padding: 1.3em;
@@ -609,20 +608,24 @@ body{
 
 /* //////////////   CONTENIDO-EXPERIENCIA   /////////////// */
 
-.contenido-1{
+.contenedores{
+    grid-column: 3/5 ;
+    grid-row: 4/5;
+    display:flex;
+    
+}
 
-    grid-column: 3/4;
-    grid-row: 4/6;
+
+.contenido-1{
     font-size:15px;
     min-width: 180px;
     margin: 0 3em 0 1em;
 }
 
 .Experiencia{
-    
-    background-color: #212529 ;
+    height: 97%;
     width: 100%;
-    height: 96%;
+    background-color: #212529;
     margin-top:1.3em;
     border-radius: 10px;
     display:flex;
@@ -674,11 +677,13 @@ body{
 
 /* /////////////////////CONTENIDO 2-2 /////////////////// */
 
+
 /* //////////////  CONTENIDO- CONOCIMIENTO  ///////////////// */
 
 .contenido2-3{
     display: flex;
     flex-direction:column;
+    width: 100%;
     height: 100%;
 }
 
@@ -745,9 +750,10 @@ body{
 
     background-color: #212529;
     width:100%;
+    height: 90%;
     border-radius:10px;
     padding:1em 0;
-    margin-top:3em;
+    margin-top:2em;
 }
 
 .habilidades h2{
@@ -805,22 +811,6 @@ body{
             font-size:14px;
     }
 
-
-        /* sidebar */
-    .contenedor .sidebar{
-        font-size:14px;
-    }
-
-        /* sidebar-2 */
-    .sidebar-2 {
-        font-size:14px;
-    }
-    
-        /* contenido-1 */
-    .contenido-1{
-        font-size:14px;
-    }
-    
         /* contenido-2 */
     .contenido-2{
         font-size:14px;
@@ -833,7 +823,8 @@ body{
 
 
 }
-@media screen and (max-width: 1040px){
+
+@media screen and (max-width: 1081px){
        
      /* Contenido */
 
@@ -889,15 +880,19 @@ body{
 }
 
 
-@media screen and (max-width: 907px){
+@media screen and (max-width: 982px){
+     /* barras de contactos */
+   .listas-contactos-sidebar{
+    font-size:14px;
+ }
 
     /* header */
-   .contenedor .header{
-    font-size:12px;
+    .contenedor .header{
+        font-size:13px;
     }
 
      /* Ventana-Email */
-     .popup-email{
+    .popup-email{
         font-size: 12px;
     }
     .Formulario{
@@ -924,17 +919,26 @@ body{
      .sidebar-2 {
         font-size:12px;
     }
-    
-        /* contenido-1 */
-    .contenido-1{
+    /* contenedor-2 */
+    .contenido-2{
         font-size:12px;
     }
-   
+
+    /* contenedor-3 */
+    .contenido-3{
+        font-size:12px;
+    }
+    .lista-habilidades li{
+        font-size: 1.3em;
+    }
 
 }
 
-@media screen and ( max-width:849px){
-   
+@media screen and ( max-width:866px){
+   /* barras de contactos */
+   .listas-contactos-sidebar{
+    font-size:13px;
+ }
         
      /* Contenido */
 
@@ -955,19 +959,19 @@ body{
        /* contenido-2 */
        
     .lista-conocimiento li{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
         
         /* contenido-3 */
     .lista-habilidades li{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
 
 }
 
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 794px){
 
     /* barras de contactos */
 
@@ -998,212 +1002,165 @@ body{
     .listas-contactos-sidebar #lista-5 img:hover{
         padding: 0.4em 1.5em;
     }
-    
-    
-        /* Contenido */
 
-   .contenido .Informacion-personal{
+         /* contenedores */
+
+    .contenedores{
+        flex-direction:column;
+    }
+    
+
+
+        /* Contenido */
+    
+    
+    .contenido .Informacion-personal{
         font-size:11px;
     }
 
-        /* header */
+
+
+    
+    /* header */
+    
     .contenedor .header{
-            font-size:11px;
-        }
+        font-size:11px;
+    }
     .header .texto{
-            width: 70%;
-        }
+        width: 70%;
+    }
     
 
-        /* sidebar */
+
+    
+    /* sidebar */
     .contenedor .sidebar{
         font-size:11px;
     }
     .imagen_movimiento{
         margin-top: 3.6em;
     }
+    
 
-        /* sidebar-2 */
+
+    /* sidebar-2 */
     .sidebar-2 {
         font-size:11px;
     }
+    .estudios{
+        margin-top:12em
+    }
+    .idiomas{
+        margin-top:6em;
+    }
     
+
+   
         /* contenido-1 */
     .contenido-1{
-        font-size:11px;
+        width: 100%;
+        font-size:14px;
+        margin: 0;
+        
+    }
+    
+        /* contenido2-3 */
 
-    }
-    .Experiencia h1{
-        font-size: 1.7em;
-        margin: 0 0 0.2em 0; 
-    }
-    .Lista-experiencia p{
-        font-size:0.8em;
-    }
-
+    .contenido2-3{
+        flex-direction: row;
+    }        
+    
         /* contenido-2 */
     .contenido-2{
-        font-size:11px;
+
+        width: 49%;
+        height: 100%;
+        font-size:12px;
+        
     }
         
         /* contenido-3 */
     .contenido-3{
-        font-size:11px;
+        width: 49%;
+        height: 100%;
+        font-size:12px;
+        margin-left:0;
+        
     }
-
+    
+    
+    .habilidades{
+        margin:1.3em 0 0 0.7em;
+    }
 
 }
 
 
-@media screen and (max-width: 668px){
+@media screen and (max-width: 661px){
      /* barras de contactos */
      .listas-contactos-sidebar{
         font-size:13px;
      }
-    
-    /* contenido-1 */
+        /* contenido-1 */
     .contenido-1{
-        font-size:10px;
-        margin: 0 2em 0 1em;
+        font-size:12px;
     }
-    .Experiencia h1{
-        padding: 0.3em 0;
+        /* contenido-2 */
+    .contenido-2{
+        font-size:11px;
     }
-    /* contenido-3 */
-     .lista-habilidades li{
-        font-size: 1.1em;
+    .lista-conocimiento li{
+        border-left:0;
     }
     
+            
+            /* contenido-3 */
+    .contenido-3{
+        font-size:11px;
+    }
+
+    .lista-habilidades li{
+     border-left:0;
+     font-size:1.1em;
+            
+    }
+        
 }
 
 @media screen and (max-width: 614px){
+
+    /* barras de contactos */
+    .listas-contactos-sidebar{
+        font-size:10px;
+     }
+
 
      /* Contenido */
 
    .contenido .Informacion-personal{
         font-size:10px;
     }
-        /* header */
-    .contenedor .header{
-        font-size:10px;
-    }
+      
 
         /* Ventana-Email */
 
     .popup-email{
-        font-size: 10px;
+        font-size: 13px;
     }
     .Formulario{
-        font-size:10px;
+        font-size:13px;
     }
 
         /* Ventana-maps */
     .popup-map{
-            font-size:10px;
+            font-size:13px;
     }
 
 
-        /* sidebar */
-    .contenedor .sidebar{
-        font-size:10px;
-    }
-
-        /* sidebar-2 */
-    .sidebar-2 {
-        font-size:10px;
-    }
-    
-        /* contenido-1 */
-    .contenido-1{
-        font-size:10px;
-        margin: 0 1em 0 1em;
-    }
-    .Experiencia h1{
-        font-size: 1.6em;
-    }
-    .Lista-experiencia span{
-        font-size: 1.1em;
-    }
-    .Lista-experiencia p{
-        font-size:0.8em;
-    }
-    
-        /* contenido-2 */
-    .contenido-2{
-        font-size:10px;
-    }
-        
-        /* contenido-3 */
-    .contenido-3{
-        font-size:10px;
-    }
-
-
-}
-
-
-
-@media screen and (max-width: 582px){
-    
-    /* barras de contactos */
-    .listas-contactos-sidebar{
-    font-size:10px;
- }
-     /* Contenido */
-
-   .item1 p{
-        font-size:1.5em;
-    }
      
-       /* sidebar-2 */
-       .sidebar-2 {
-        font-size:9px;
-    }
     
-        /* contenido-1 */
-    .contenido-1{
-        font-size:10px;
-    }
-    .Experiencia h1{
-        font-size: 1.6em;
-    }
-    .Lista-experiencia span{
-        font-size: 1.1em;
-    }
-    .Lista-experiencia p{
-        font-size:0.8em;
-    }
     
-        /* contenido-2 */
-    .contenido-2{
-        font-size:9px;
-    }
-        
-        /* contenido-3 */
-    .contenido-3{
-        font-size:9px;
-    }
-    .Lista-experiencia li{
-        font-size:1em;
-        padding: 1.3em 0;
-    }
-
+   
 
 }
-@media screen and (max-width: 546px){
 
-  /* contenido-2 */
-  .contenido-2{
-    font-size:8px;
-}
-    
-    /* contenido-3 */
-.contenido-3{
-    font-size:8px;
-
-}
-.lista-habilidades li{
-    font-size:0.95em;
-    padding: 1.5em 0;
-}
-}
