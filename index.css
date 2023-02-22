@@ -923,6 +923,9 @@ body{
     .contenido-2{
         font-size:12px;
     }
+    .habilidades{
+    margin-top:3em;
+    }
 
     /* contenedor-3 */
     .contenido-3{
@@ -1076,7 +1079,7 @@ body{
         width: 49%;
         height: 100%;
         font-size:12px;
-        
+       
     }
         
         /* contenido-3 */
@@ -1090,7 +1093,7 @@ body{
     
     
     .habilidades{
-        margin:1.3em 0 0 0.7em;
+        margin:1.4em 0 0 0.7em;
     }
 
 }
