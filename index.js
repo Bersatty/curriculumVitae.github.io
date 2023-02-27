@@ -56,14 +56,14 @@ cerrarVentanaMap.addEventListener("click", ()=>{
 
             //Redireccion boton whatsapp
 
-const redireccion = ()=>{
-    location.href = "https://wa.me/542984529481";
-}
+// const redireccion = ()=>{
+//     location.href = "https://wa.me/542984529481";
+// }
 
             //redireccion boton linkedin 
-const redireccionLinkedin = ()=>{
-    location.href = "https://ar.linkedin.com/";
-}
+// const redireccionLinkedin = ()=>{
+//     location.href = "https://ar.linkedin.com/";
+// }
 
 
 

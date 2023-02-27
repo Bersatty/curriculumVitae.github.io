@@ -42,8 +42,8 @@ body{
     flex-direction: column;
     top:9em;
     z-index:1;
+    
 }
-
 
 .listas-contactos-sidebar a img{
     background-color:#363636;
@@ -51,11 +51,14 @@ body{
     border: 1px solid white;
     border-bottom-right-radius:10px ;
     border-top-right-radius: 10px;
-    display: flex;
     margin:0.25em;
     transition: .5s ease all;
+    display:flex;
 }
-.listas-contactos-sidebar #lista-1 img:hover{
+
+
+
+.listas-contactos-sidebar #lista-1 img:hover {
     padding: 1.5em 5em ;
     transition: .5s ease all;
     background-color:#003580;
@@ -653,12 +656,11 @@ body{
     margin-left: 3.5em;
     list-style-type:none;
     font-size: 1.3em;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Manrope', sans-serif;
     font-weight: 600;
     color:#A4ABB3;
     border-bottom: 3px solid  #7a40ef;
-
-    
+ 
 }
 
 .Lista-experiencia p{
@@ -981,19 +983,25 @@ body{
         position:fixed;
         display: flex;
         flex-direction: row;
-        opacity: 0.6;
+        opacity: 0.7;
         top:0;
         left:16em;
     }
     .listas-contactos-sidebar a img{
         padding: 0.4em 1.5em;
         border-radius: 10px;
+       
     }
+
+    
     .listas-contactos-sidebar #lista-1 img:hover{
         padding: 0.4em 1.5em;
+        
     }
     .listas-contactos-sidebar #lista-2 img:hover{
         padding: 0.4em 1.5em;
+        
+    
     }
     .listas-contactos-sidebar #lista-3 img:hover{
         padding: 0.4em 1.5em;
