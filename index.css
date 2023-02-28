@@ -44,44 +44,57 @@ body{
     z-index:1;
     
 }
-
-.listas-contactos-sidebar a img{
+.listas-contactos-sidebar .lista{
+    display:flex;
+    padding:0;
+    margin:0;
+}
+.listas-contactos-sidebar div{
+    display:flex;
     background-color:#363636;
     padding: 1.5em 0.5em;
     border: 1px solid white;
     border-bottom-right-radius:10px ;
     border-top-right-radius: 10px;
     margin:0.25em;
-    transition: .5s ease all;
+    transition: .5s;
+    
+}
+.listas-contactos-sidebar div img{
     display:flex;
+    padding:0;
+    margin:0;
+    transition: .8s;
 }
 
+.listas-contactos-sidebar div:hover img{
+    transform:rotate(360deg)
+}
 
-
-.listas-contactos-sidebar #lista-1 img:hover {
-    padding: 1.5em 5em ;
-    transition: .5s ease all;
+.listas-contactos-sidebar .imagen-redes-1:hover{
     background-color:#003580;
-
-}
-.listas-contactos-sidebar #lista-2 img:hover{
     padding: 1.5em 5em ;
-    transition: .5s ease all;
+    transition: .5s ease-in-out all ;
+}
+
+.listas-contactos-sidebar .imagen-redes-2:hover{
+    padding: 1.5em 5em ;
+    transition: .5s ease-in-out all ;
     background-color:#d00023;
 }
-.listas-contactos-sidebar #lista-3 img:hover{
+.listas-contactos-sidebar .imagen-redes-3:hover{
     padding: 1.5em 5em ;
-    transition: .5s ease all;
+    transition: .5s ease-in-out all ;
     background-color:#0A66C2;
 }
-.listas-contactos-sidebar #lista-4 img:hover{
+.listas-contactos-sidebar .imagen-redes-4:hover{
     padding: 1.5em 5em ;
-    transition: .5s ease all;
+    transition: .5s ease-in-out all ;
     background-color:#4CCB5A;
 }
-.listas-contactos-sidebar #lista-5 img:hover{
+.listas-contactos-sidebar .imagen-redes-5:hover{
     padding: 1.5em 5em ;
-    transition: .5s ease all;
+    transition: .5s ease-in-out all ;
     background:linear-gradient( 130deg,
                                  #48B165 20%, 
                                  #48B165 40%, 
@@ -987,30 +1000,39 @@ body{
         top:0;
         left:16em;
     }
-    .listas-contactos-sidebar a img{
+    
+    .listas-contactos-sidebar div{
         padding: 0.4em 1.5em;
         border-radius: 10px;
        
     }
 
+  
+    .listas-contactos-sidebar div:hover img{
+        transform:rotate(0deg)
+    }
     
-    .listas-contactos-sidebar #lista-1 img:hover{
+    .listas-contactos-sidebar .imagen-redes-1:hover{
         padding: 0.4em 1.5em;
+        outline: none;
         
     }
-    .listas-contactos-sidebar #lista-2 img:hover{
+    .listas-contactos-sidebar .imagen-redes-2:hover{
         padding: 0.4em 1.5em;
-        
+        outline: none;
     
     }
-    .listas-contactos-sidebar #lista-3 img:hover{
+    .listas-contactos-sidebar .imagen-redes-3:hover{
         padding: 0.4em 1.5em;
+        outline: none;
     }
-    .listas-contactos-sidebar #lista-4 img:hover{
+    .listas-contactos-sidebar .imagen-redes-4:hover{
         padding: 0.4em 1.5em;
+        outline: none;
     }
-    .listas-contactos-sidebar #lista-5 img:hover{
+    .listas-contactos-sidebar .imagen-redes-5:hover{
         padding: 0.4em 1.5em;
+        outline: none;
     }
 
          /* contenedores */

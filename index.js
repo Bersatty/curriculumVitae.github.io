@@ -1,6 +1,6 @@
                 //COPIAR NUMERO
 
-document.querySelector("#lista-1").onclick= async() =>{
+document.querySelector(".imagen-redes-1").onclick= async() =>{
     try {
         await navigator.clipboard.writeText("810-555-111-000")
         swal({
@@ -19,7 +19,7 @@ document.querySelector("#lista-1").onclick= async() =>{
             //  VENTANA DE E-MAIL
 
 
-const btnabrirPopup = document.getElementById("lista-2");
+const btnabrirPopup = document.getElementById("Email");
 const ventanaEmail = document.getElementById("ventana-email");
 const popupEmail = document.getElementById("popup-email");
 const cerrarVentanaEmail = document.getElementById("cerrar-ventana-email");
@@ -38,7 +38,7 @@ cerrarVentanaEmail.addEventListener("click", ()=>{
 
             //Ventana de Ubicacion
 
-const abrirVentanaMap = document.getElementById("lista-5");
+const abrirVentanaMap = document.getElementById("mapa");
 const ventanaMap = document.getElementById("ventana-map");
 const popupMap = document.getElementById("popup-map");
 const cerrarVentanaMap = document.getElementById("cerrar-ventana-map")
